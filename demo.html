@@ -1,0 +1,38 @@
+<html>
+
+<head>
+	
+	<script type="text/javascript" src="lib/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="jquery.selectoptions.js"></script>
+
+</head>
+
+<body>
+	
+<div>
+
+<h2>DEMO</h2>
+
+
+<select id="selectElement">
+<option>Please select</option>
+</select>
+
+</div>
+
+<script type="text/javascript">
+	
+$(document).ready(function() {
+	$('#selectElement').selectOptions({items: [
+		{key: 'key1', value: 'value1'},
+		{key: 'key2', value: 'value2'},
+		{key: 'key3', value: 'value3'},
+		{key: 'key4', value: 'value4'}
+	]});
+});
+
+</script>
+
+</body>
+
+</html>
